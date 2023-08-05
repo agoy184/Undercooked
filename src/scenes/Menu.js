@@ -30,11 +30,11 @@ class Menu extends Phaser.Scene{
         }
  
         // menu text
-        this.add.text(game.config.width/2, game.config.height/6, 'Interning God', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/6, 'Undercooked', menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, game.config.height/2, 'Press SPACE to start', menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/5, game.config.height/1.25, 'Press D for credits', smallConfig).setOrigin(0.5);
         this.add.text(game.config.width/1.25, game.config.height/1.25, 'Press A for controls', smallConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, game.config.height/1.05, 'For Narrative Jam & Improve Your Game Jam 2023', smallConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/1.05, 'For GDA Summer Split Jam 2023', smallConfig).setOrigin(0.5);
 
         keySPACE = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
         keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
