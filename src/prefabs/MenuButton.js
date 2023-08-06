@@ -4,7 +4,7 @@ class MenuButton {
             .setOrigin(0.5)
             .setPadding(10)
             //.setPadding(10)
-            .setStyle({ backgroundColor: '#bda280' })
+            .setStyle({ backgroundColor: '#303030' })
             .setInteractive({ useHandCursor: true })
             .on('pointerdown', () => callback())
             .on('pointerover', () => button.setStyle({ fill: '#f39c12' }))

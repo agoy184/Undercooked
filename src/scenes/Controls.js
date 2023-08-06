@@ -30,7 +30,7 @@ class Controls extends Phaser.Scene {
             fixedWidth: 0
         }
 
-        this.add.text(game.config.width/2, game.config.height/2.5, 'Controls\nWASD to move\nSPACE to continue dialog', menuConfig).setAlign('center').setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/2.5, 'Controls\nWASD to move\nSPACE to start cooking burgers', menuConfig).setAlign('center').setOrigin(0.5);
 
         this.add.text(game.config.width/2, 8*game.config.height/9, 'Press R to return to the title screen menu', smallConfig).setOrigin(0.5);
 

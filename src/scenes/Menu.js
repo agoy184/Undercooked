@@ -43,13 +43,15 @@ class Menu extends Phaser.Scene{
         keySPACE = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
         keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
         keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
+
+        const startButton = new MenuButton(game.config.width/2, game.config.height/2, 'Enter the Kitchen', this, () => this.scene.start('preLoad'));
     }
 
     update() {
         if (Phaser.Input.Keyboard.JustDown(keySPACE)) {
             // Play mode
             //this.sound.play('sfx_select');            
-            this.scene.start("introScene");    
+            this.scene.start('preLoad');    
         }
 
         if (Phaser.Input.Keyboard.JustDown(keyD)) {
