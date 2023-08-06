@@ -19,9 +19,6 @@ class Load extends Phaser.Scene {
         this.load.path = './assets/';
 
         // background audio
-        this.load.audio('scene_1_background_music', 'audio/Greener_Pastures-Darren_Curtis.mp3');
-        this.load.audio('scene_2_background_music', 'audio/Sakuya2-PerituneMaterial.mp3');
-        this.load.audio('scene_3_background_music', 'audio/Rain_on_the_Window-Alex_Productions.mp3');
 
         //sfx
         this.load.audio('cooking', 'audio/Burger_Cooking_LowVol.wav')
@@ -33,8 +30,8 @@ class Load extends Phaser.Scene {
         this.load.audio('hum1', 'audio/Hum_V1.wav')
         this.load.audio('hum2', 'audio/Hum_V2.wav')
         this.load.audio('soda machine', 'audio/Soda_V1.wav')
-        /* this.load.audio('sfx_select', 'audio/pop.wav');
-        this.load.audio('open_container', ['audio/open_container.wav', 'audio/open_container.mp3', 'audio/open_container.ogg']);
+        this.load.audio('sfx_select', 'audio/pop.wav');
+        /* this.load.audio('open_container', ['audio/open_container.wav', 'audio/open_container.mp3', 'audio/open_container.ogg']);
         this.load.audio('tele_ring', ['audio/uk-old-104244.mp3']); */
 
         // images
@@ -59,7 +56,7 @@ class Load extends Phaser.Scene {
         this.load.image('Kyoko', 'sprites/kyoko_spr.png')
         this.load.image('Keizo', 'sprites/keizo_spr.png') */
 
-        // tilemap
+        /* tilemap
         this.load.image('wallset', 'tilesets/monoJPWallset.png')
         this.load.image('ocean', 'tilesets/monoBasicBeach.png')
         // scene 1
@@ -70,10 +67,10 @@ class Load extends Phaser.Scene {
         this.load.tilemapTiledJSON('s2GroundJSON', 'scene2_tilemap/scene2OceanGround.json')
         // scene 3
         this.load.tilemapTiledJSON('s3JSON', 'scene3_tilemap/scene3.json')
-
+        */
         // dialog images
         this.load.image('dialog_box', '/dialog_images/dialog_box.png');
-        // normal
+        /* normal
         this.load.image('Shukichi_Dialog', 'dialog_images/shukichi_cu.png');
         this.load.image('Tomi_Dialog', 'dialog_images/tomi_cu.png');
         this.load.image('Shige_Dialog', 'dialog_images/shige_cu.png');
@@ -85,7 +82,7 @@ class Load extends Phaser.Scene {
         this.load.image('Koichi_Dialog_Sad', 'dialog_images/koichi_cu_sad.png');
         this.load.image('Kyoko_Dialog_Sad', 'dialog_images/kyoko_cu.png');
         this.load.image('Keizo_Dialog_Sad', 'dialog_images/keizo_cu.png');
-        this.load.image('Noriko_Dialog_Sad', 'dialog_images/noriko_cu_sad.png');
+        this.load.image('Noriko_Dialog_Sad', 'dialog_images/noriko_cu_sad.png');*/
     }
 
     create() {

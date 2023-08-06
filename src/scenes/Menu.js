@@ -3,6 +3,10 @@ class Menu extends Phaser.Scene{
         super('menuScene');
     }
 
+    preload() {
+        this.load.audio('sfx_select', 'audio/pop.wav');
+
+    }
     create() {
         let menuConfig = {
             fontFamily: 'Fantasy',
@@ -44,19 +48,19 @@ class Menu extends Phaser.Scene{
     update() {
         if (Phaser.Input.Keyboard.JustDown(keySPACE)) {
             // Play mode
-            this.sound.play('sfx_select');            
+            //this.sound.play('sfx_select');            
             this.scene.start("introScene");    
         }
 
         if (Phaser.Input.Keyboard.JustDown(keyD)) {
             // Credits mode
-            this.sound.play('sfx_select');
-            this.scene.start("creditsMusicScene");    
+            //this.sound.play('sfx_select');
+            this.scene.start("creditsScene");    
         }
 
         if (Phaser.Input.Keyboard.JustDown(keyA)) {
            // Control mode
-           this.sound.play('sfx_select');
+           //this.sound.play('sfx_select');
            this.scene.start("controlsScene");    
        }
     }

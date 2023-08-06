@@ -26,7 +26,7 @@ let config = {
         }
       }
     },
-    scene:  [ Load, Intro, Menu, Ending, CreditsMusic, CreditsBackground, Controls, BarTestScene ]
+    scene:  [ Load, Intro, Menu, Controls, BarTestScene, Credits ]
 }
 
 let game = new Phaser.Game(config);
