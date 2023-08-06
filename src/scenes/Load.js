@@ -30,7 +30,11 @@ class Load extends Phaser.Scene {
 
         // images
         // character images
-        this.load.image('Tomi', 'sprites/tomi_spr.png')
+        this.load.image('Boss', 'sprites/boss.gif')
+        this.load.image('Coworker', 'sprites/coworker.gif')
+        this.load.image('Customer', 'sprites/customer.gif')
+        this.load.image('Player', 'sprites/player.gif')
+        /* this.load.image('Tomi', 'sprites/tomi_spr.png')
         this.load.image('TomiDead', 'sprites/tomi_spr_dead.png')
         this.load.image('Shukichi', 'sprites/shukichi_spr.png')
         this.load.image('ShukichiSad', 'sprites/shukichi_spr_sad.png')
@@ -44,7 +48,7 @@ class Load extends Phaser.Scene {
         this.load.image('Noriko', 'sprites/noriko_spr.png')
         this.load.image('NorikoSad', 'sprites/noriko_spr_sad.png')
         this.load.image('Kyoko', 'sprites/kyoko_spr.png')
-        this.load.image('Keizo', 'sprites/keizo_spr.png')
+        this.load.image('Keizo', 'sprites/keizo_spr.png') */
 
         // tilemap
         this.load.image('wallset', 'tilesets/monoJPWallset.png')
