@@ -37,6 +37,24 @@ class Diner extends Phaser.Scene {
 
     update() {
         this.chef.update();
+        if(this.checkCollision(this.chef, this.customer)) {
+            console.log(this.chef.x)
+            if (keyS.isDown) {
+                this.chef.y += 1;
+            }
 
+
+        }
+    }
+
+    checkCollision(player, other) {
+        if (player.x < other.x + other.width &&
+            player.x + player.width > other.x &&
+            player.y < other.y + other.height &&
+            player.height + player.y > other.y) {
+                return true;
+            } else {
+                return false;
+            }
     }
 }
