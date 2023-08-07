@@ -16,7 +16,9 @@ class Diner extends Phaser.Scene {
         this.load.image('table', 'table.png')
 
         //animating sprites
-        this.load.spritesheet('playerSS', 'sprites/playerSSwithspatula.png', {frameWidth: 32, frameHeight: 32, startFrame: 0, endFrame: 9});
+        //this.load.spritesheet('playerSS', 'sprites/playerSSwithspatula.png', {frameWidth: 32, frameHeight: 32, startFrame: 0, endFrame: 9});
+        // Atlas not working due to .ase inaccuracies
+        // this.load.atlas('playerSS', 'sprites/playerSS.png', 'sprites/playerSS.json')
     }
 
     create() {
@@ -33,10 +35,18 @@ class Diner extends Phaser.Scene {
         this.boss = new Player(this, 50, 100, 'Boss').setScale(0.2).setOrigin();
         this.coworker = new Player(this, 150, 150, 'Coworker').setScale(0.2).setOrigin();
         this.customer = new Player(this, 300, 350, 'Customer').setScale(0.2).setOrigin();
-    }
+        /*this.playerSS = this.add.sprite(600, 50, 'playerSS');
+        this.anims.create({
+            key: 'move',
+            frames: this.anims.generateFrameNumbers('playerSS', { start: 0, end: 2, first: 0}),
+            frameRate: 7
+        });*/
+}
 
     update() {
         this.chef.update();
-
+        /*if (keyD.isDown) {
+            this.playerSS.play({key: 'move', repeat: 2});
+        }*/
     }
 }

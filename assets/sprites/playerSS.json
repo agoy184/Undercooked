@@ -1,0 +1,42 @@
+{ "frames": {
+   "player sprite idle  0.ase": {
+    "frame": { "x": 0, "y": 0, "w": 57, "h": 97 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 3, "w": 57, "h": 97 },
+    "sourceSize": { "w": 100, "h": 100 },
+    "duration": 250
+   },
+   "player sprite idle  1.ase": {
+    "frame": { "x": 57, "y": 0, "w": 55, "h": 94 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 9, "y": 6, "w": 55, "h": 94 },
+    "sourceSize": { "w": 100, "h": 100 },
+    "duration": 200
+   },
+   "player sprite idle  2.ase": {
+    "frame": { "x": 112, "y": 0, "w": 58, "h": 98 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 2, "w": 58, "h": 98 },
+    "sourceSize": { "w": 100, "h": 100 },
+    "duration": 150
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.40-x64",
+  "image": "player sprite idle .png",
+  "format": "RGBA8888",
+  "size": { "w": 170, "h": 98 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "workerundercooked", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
