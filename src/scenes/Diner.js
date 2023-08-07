@@ -4,6 +4,7 @@ class Diner extends Phaser.Scene {
     }
 
     preload() {
+        this.load.path = './assets/';
         //character sprites
         this.load.image('Boss', 'sprites/boss.gif')
         this.load.image('Coworker', 'sprites/coworker.gif')
@@ -11,15 +12,20 @@ class Diner extends Phaser.Scene {
         this.load.image('Player', 'sprites/player.gif')
 
         //object sprites
-        this.load.image('chair1', 'chair (blue).png')
-        this.load.image('chair2', 'diner chair.png')
-        this.load.image('table', 'table.png')
+        this.load.image('chair1', 'sprites/chair(blue).png')
+        this.load.image('chair2', 'sprites/dinerchair.png')
+        this.load.image('table', 'sprites/table.png')
 
         //animating sprites
         this.load.spritesheet('playerSS', 'sprites/playerSSwithspatula.png', {frameWidth: 32, frameHeight: 32, startFrame: 0, endFrame: 9});
+
+        //background music
+        this.load.audio('music', 'audio/uncooked.mp3')
     }
 
     create() {
+        this.music = this.sound.play('music');
+
         keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
         keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
         keyS = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
@@ -37,6 +43,7 @@ class Diner extends Phaser.Scene {
 
     update() {
         this.chef.update();
+
 
     }
 }
