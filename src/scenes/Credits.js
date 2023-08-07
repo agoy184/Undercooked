@@ -24,9 +24,9 @@ class Credits extends Phaser.Scene {
         // menu text
         this.add.text(game.config.width/2, game.config.height/9, 'Credits', menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, 2*game.config.height/9, 'Programming: ', menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, 3*game.config.height/9, 'Game Design: ', menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, 4*game.config.height/9, 'Sprites: ', menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, 5*game.config.height/9, 'Music: ', menuConfig).setOrigin(0.5);        
+        this.add.text(game.config.width/2, 3*game.config.height/9, 'Game Design: Abel, Alexa, Samuel, Daren', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, 4*game.config.height/9, 'Sprites: Alexa - Character/Object Sprites/Animation', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, 5*game.config.height/9, 'Music: Daren - SFX, DogeSquad - Background Music', menuConfig).setOrigin(0.5);        
         this.add.text(game.config.width/2, 8*game.config.height/9, 'Press S to go back to the starting menu', menuConfig).setOrigin(0.5);
 
         keyS = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
