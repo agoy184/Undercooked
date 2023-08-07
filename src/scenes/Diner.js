@@ -24,7 +24,9 @@ class Diner extends Phaser.Scene {
     }
 
     create() {
-        this.music = this.sound.play('music');
+        this.music = this.sound.add('music');
+        this.music.loop = true;
+        this.music.play();
 
         keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
         keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
