@@ -10,10 +10,10 @@ class Intro extends Phaser.Scene {
         this.cam = this.cameras.main.fadeIn(2000, 0, 0, 0);
 
         this.cam.on('camerafadeincomplete', () => {
-            this.cam = this.cameras.main.fadeOut(15000, 0, 0, 0);
+            this.cam = this.cameras.main.fadeOut(5000, 0, 0, 0);
 
             this.cam.on('camerafadeoutcomplete', () => {
-                this.scene.start('arrivalAndNeglectScene');
+                this.scene.start('Diner');
             });
         })
     }

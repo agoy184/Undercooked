@@ -21,6 +21,7 @@ class Load extends Phaser.Scene {
         // background audio
 
         //sfx
+        this.load.audio('click', 'audio/Click_V1.wav')
         this.load.audio('cooking', 'audio/Burger_Cooking_LowVol.wav')
         this.load.audio('cookingLoop', 'audio/BurgerCookingLoop_LowVol.wav')
         this.load.audio('customer1', 'audio/Customer_Approaching_V1.wav')

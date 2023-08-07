@@ -23,7 +23,7 @@ class Credits extends Phaser.Scene {
 
         // menu text
         this.add.text(game.config.width/2, game.config.height/9, 'Credits', menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, 2*game.config.height/9, 'Programming: ', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, 2*game.config.height/9, 'Programming: Abel Goy - Producer, Programmer, Design\n Samuel Zhang - Programmer, Design', menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, 3*game.config.height/9, 'Game Design: ', menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, 4*game.config.height/9, 'Sprites: ', menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, 5*game.config.height/9, 'Music: ', menuConfig).setOrigin(0.5);        
